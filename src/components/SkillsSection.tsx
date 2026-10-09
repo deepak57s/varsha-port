@@ -5,23 +5,23 @@ import { skillCategories } from '../portfolioData';
 const getIcon = (name: string) => {
   switch (name) {
     case 'palette':
-      return <Palette size={20} className="text-[#38bdf8]" />;
+      return <Palette size={20} className="text-[#ff6b35]" />;
     case 'database':
-      return <Database size={20} className="text-[#38bdf8]" />;
+      return <Database size={20} className="text-[#ff6b35]" />;
     case 'code':
-      return <Code size={20} className="text-[#38bdf8]" />;
+      return <Code size={20} className="text-[#ff6b35]" />;
     case 'cpu':
-      return <Cpu size={20} className="text-[#38bdf8]" />;
+      return <Cpu size={20} className="text-[#ff6b35]" />;
     case 'terminal':
-      return <Terminal size={20} className="text-[#38bdf8]" />;
+      return <Terminal size={20} className="text-[#ff6b35]" />;
     default:
-      return <Layers size={20} className="text-[#38bdf8]" />;
+      return <Layers size={20} className="text-[#ff6b35]" />;
   }
 };
 
 export const SkillsSection: React.FC = () => {
   return (
-    <section id="skills" className="relative w-full py-24 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-[#121212] text-cream">
+    <section id="skills" className="relative w-full py-24 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-[#141414] text-cream">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-cream/10">

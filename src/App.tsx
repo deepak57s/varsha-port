@@ -16,7 +16,7 @@ export default function App() {
   const [activeSectionIndex, setActiveSectionIndex] = useState(0);
 
   const gooeyItems: GooeyNavItem[] = [
-    { label: 'HOME', href: '#home', icon: <Compass size={15} className="text-[#38bdf8]" /> },
+    { label: 'HOME', href: '#home', icon: <Compass size={15} className="text-[#ff6b35]" /> },
     { label: 'BACKGROUND', href: '#background', icon: <GraduationCap size={15} className="opacity-70" /> },
     { label: 'SKILLS & EXPERTISE', href: '#skills', icon: <Layers size={15} className="opacity-70" /> },
     { label: 'WORK & PROJECTS', href: '#projects', icon: <Briefcase size={15} className="opacity-70" /> },
@@ -109,7 +109,7 @@ export default function App() {
           <button
             type="button"
             onClick={() => scrollToSection('home')}
-            className="font-hn text-lg tracking-wide text-cream anim-fade-up hover:opacity-80 transition-opacity cursor-pointer bg-transparent border-none p-0 text-left focus:outline-none"
+            className="font-hn text-lg tracking-wide text-cream anim-fade-up hover:text-[#ff6b35] transition-colors cursor-pointer bg-transparent border-none p-0 text-left focus:outline-none"
             style={{ animationDelay: '800ms' }}
           >
             {personalInfo.brand}
@@ -137,16 +137,8 @@ export default function App() {
           </div>
         </div>
 
-        {/* Right cluster: Year + Social Links */}
-        <div className="hidden sm:flex items-center gap-8 lg:gap-12">
-          {/* Year */}
-          <div
-            className="text-sm font-hn text-cream anim-fade-up"
-            style={{ animationDelay: '900ms' }}
-          >
-            {personalInfo.year}
-          </div>
-
+        {/* Right cluster: Social Links (2026 removed) */}
+        <div className="hidden sm:flex items-center gap-6 lg:gap-8">
           {/* Social Links */}
           <div className="flex items-center gap-4 text-sm font-hn" aria-label="Social Links">
             {socialLinks.map((item, idx) => (
@@ -155,7 +147,7 @@ export default function App() {
                 href={item.href}
                 target={item.href.startsWith('http') ? '_blank' : undefined}
                 rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="text-cream anim-fade-up hover:opacity-60 transition-opacity duration-300"
+                className="text-cream anim-fade-up hover:text-[#ff6b35] transition-colors duration-300"
                 style={{ animationDelay: `${1150 + idx * 80}ms` }}
               >
                 {item.label}
@@ -252,7 +244,7 @@ export default function App() {
                     transitionDelay: isDrawerOpen ? `${250 + idx * 60}ms` : '0ms',
                   }}
                 >
-                  <span className="text-[#38bdf8] opacity-80">{item.icon}</span>
+                  <span className="text-[#ff6b35] opacity-90">{item.icon}</span>
                   <span>{item.label}</span>
                 </button>
               ))}
@@ -277,7 +269,7 @@ export default function App() {
                   target={item.href.startsWith('http') ? '_blank' : undefined}
                   rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   onClick={() => setIsDrawerOpen(false)}
-                  className={`text-sm font-hn text-cream transition-all duration-500 hover:opacity-60 ${
+                  className={`text-sm font-hn text-cream transition-all duration-500 hover:text-[#ff6b35] ${
                     isDrawerOpen
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-4'

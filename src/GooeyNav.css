@@ -1,8 +1,8 @@
 :root {
-  --color-1: #efeee9;
-  --color-2: #ffffff;
-  --color-3: #e2e1dc;
-  --color-4: #c4c3be;
+  --color-1: #f7f6f2;
+  --color-2: #ff6b35;
+  --color-3: #ffffff;
+  --color-4: #e85a26;
 }
 
 .gooey-nav-container {
@@ -25,13 +25,13 @@
   padding: 0.3rem 0.4rem;
   margin: 0;
   position: relative;
-  color: #efeee9;
-  background: rgba(18, 18, 18, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(239, 238, 233, 0.14);
+  color: #f7f6f2;
+  background: rgba(20, 20, 20, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(247, 246, 242, 0.14);
   border-radius: 9999px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
 }
 
 .gooey-nav-container nav ul li {
@@ -39,7 +39,7 @@
   position: relative;
   cursor: pointer;
   transition: color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-  color: #efeee9;
+  color: #f7f6f2;
   z-index: 3;
 }
 
@@ -56,36 +56,41 @@
   color: inherit;
   white-space: nowrap;
   outline: none;
+  transition: opacity 0.2s ease;
+}
+
+.gooey-nav-container nav ul li:hover:not(.active) a {
+  color: #ffffff;
 }
 
 .gooey-nav-container nav ul li:focus-within:has(:focus-visible) {
-  box-shadow: 0 0 0 2px rgba(239, 238, 233, 0.8);
+  box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.8);
 }
 
 .gooey-nav-container nav ul li.active {
-  color: #121212 !important;
+  color: #141414 !important;
   font-weight: 600;
 }
 
 .gooey-nav-container nav ul li.active a {
-  color: #121212 !important;
+  color: #141414 !important;
 }
 
 .gooey-nav-container nav ul li.active .icon-wrapper svg {
-  color: #121212 !important;
-  stroke: #121212 !important;
+  color: #ff6b35 !important;
+  stroke: #ff6b35 !important;
 }
 
-/* Sliding active pill */
+/* Sliding active pill in Cream #f7f6f2 */
 .gooey-nav-container .gooey-pill {
   position: absolute;
   top: 0;
   left: 0;
-  background: #efeee9;
+  background: #f7f6f2;
   border-radius: 9999px;
   z-index: 2;
   pointer-events: none;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   transition:
     transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     width 0.3s cubic-bezier(0.22, 1, 0.36, 1),
@@ -129,13 +134,13 @@
 @keyframes gooeyParticleAnim {
   0% {
     transform: rotate(0deg) translate(calc(var(--start-x)), calc(var(--start-y)));
-    opacity: 0.9;
+    opacity: 0.95;
     animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
   }
 
   70% {
     transform: rotate(calc(var(--rotate) * 0.5)) translate(calc(var(--end-x) * 1.2), calc(var(--end-y) * 1.2));
-    opacity: 0.8;
+    opacity: 0.85;
     animation-timing-function: ease;
   }
 
@@ -167,7 +172,7 @@
 
   65% {
     transform: scale(var(--scale));
-    opacity: 0.9;
+    opacity: 0.95;
     animation-timing-function: ease;
   }
 

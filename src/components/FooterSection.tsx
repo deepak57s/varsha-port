@@ -8,7 +8,7 @@ interface FooterSectionProps {
 
 export const FooterSection: React.FC<FooterSectionProps> = ({ onBackToTop }) => {
   return (
-    <footer className="w-full bg-[#0d0d0d] border-t border-cream/10 py-16 px-6 sm:px-10 lg:px-16 text-cream">
+    <footer className="w-full bg-[#141414] border-t border-cream/10 py-16 px-6 sm:px-10 lg:px-16 text-cream">
       <div className="max-w-6xl mx-auto flex flex-col justify-between gap-12">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pb-10 border-b border-cream/10">
           <div>
@@ -31,7 +31,7 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onBackToTop }) => 
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-xl bg-[#181818] hover:bg-[#222222] border border-cream/10 text-cream/70 hover:text-cream transition-colors"
+              className="p-3 rounded-xl bg-[#181818] hover:bg-[#222222] border border-cream/10 text-cream/70 hover:text-[#ff6b35] hover:border-[#ff6b35]/40 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={18} />
@@ -40,14 +40,14 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onBackToTop }) => 
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-xl bg-[#181818] hover:bg-[#222222] border border-cream/10 text-cream/70 hover:text-cream transition-colors"
+              className="p-3 rounded-xl bg-[#181818] hover:bg-[#222222] border border-cream/10 text-cream/70 hover:text-[#ff6b35] hover:border-[#ff6b35]/40 transition-colors"
               aria-label="GitHub"
             >
               <Github size={18} />
             </a>
             <a
               href={`mailto:${personalInfo.email}`}
-              className="p-3 rounded-xl bg-[#181818] hover:bg-[#222222] border border-cream/10 text-cream/70 hover:text-cream transition-colors"
+              className="p-3 rounded-xl bg-[#181818] hover:bg-[#222222] border border-cream/10 text-cream/70 hover:text-[#ff6b35] hover:border-[#ff6b35]/40 transition-colors"
               aria-label="Email"
             >
               <Mail size={18} />
@@ -56,7 +56,7 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onBackToTop }) => 
             <button
               type="button"
               onClick={onBackToTop}
-              className="flex items-center gap-2 px-4 py-3 rounded-xl bg-[#181818] hover:bg-[#222222] border border-cream/10 text-xs font-mono uppercase tracking-wider text-cream/70 hover:text-cream transition-colors cursor-pointer ml-2"
+              className="flex items-center gap-2 px-4 py-3 rounded-xl bg-[#181818] hover:bg-[#222222] border border-cream/10 text-xs font-mono uppercase tracking-wider text-cream/70 hover:text-[#ff6b35] hover:border-[#ff6b35]/40 transition-colors cursor-pointer ml-2"
               aria-label="Back to top"
             >
               <span>Back to Top</span>

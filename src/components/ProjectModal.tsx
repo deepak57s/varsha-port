@@ -52,7 +52,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
         {/* Category & Date */}
         <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-cream/50 mb-3">
-          <span className="px-2.5 py-1 rounded bg-[#252525] text-[#38bdf8] border border-cream/10 uppercase tracking-wider">
+          <span className="px-2.5 py-1 rounded bg-[#252525] text-[#ff6b35] border border-cream/10 uppercase tracking-wider">
             {project.categoryLabel}
           </span>
           <span className="flex items-center gap-1">
@@ -90,7 +90,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           <ul className="space-y-2 text-sm text-cream/80 font-light">
             {project.features.map((feat, idx) => (
               <li key={idx} className="flex items-start gap-2.5 leading-relaxed">
-                <CheckCircle2 size={15} className="text-[#38bdf8] mt-1 shrink-0" />
+                <CheckCircle2 size={15} className="text-[#ff6b35] mt-1 shrink-0" />
                 <span>{feat}</span>
               </li>
             ))}
@@ -121,7 +121,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#222222] hover:bg-[#2c2c2c] border border-cream/15 text-xs font-mono text-cream transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#222222] hover:bg-[#2c2c2c] border border-cream/15 text-xs font-mono text-cream hover:text-[#ff6b35] transition-colors"
             >
               <Github size={15} />
               <span>View Source on GitHub</span>
@@ -132,7 +132,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cream text-black hover:bg-white font-medium text-xs font-mono transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#ff6b35] hover:bg-[#e85a26] text-white font-medium text-xs font-mono transition-colors shadow-lg shadow-[#ff6b35]/25"
             >
               <ExternalLink size={15} />
               <span>Verify & Open Live Application</span>

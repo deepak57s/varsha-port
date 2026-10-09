@@ -60,13 +60,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToExplore }) =
         <button
           type="button"
           onClick={onScrollToExplore}
-          className="group flex flex-col items-center gap-2 text-cream/70 hover:text-cream transition-colors duration-300 pointer-events-auto cursor-pointer focus:outline-none"
+          className="group flex flex-col items-center gap-2 text-cream/70 hover:text-[#ff6b35] transition-colors duration-300 pointer-events-auto cursor-pointer focus:outline-none"
           aria-label="Scroll to background and explore portfolio"
         >
           <span className="text-[11px] font-mono uppercase tracking-[0.2em] opacity-80 group-hover:opacity-100 transition-opacity">
             Scroll to explore
           </span>
-          <div className="w-7 h-7 rounded-full border border-cream/30 flex items-center justify-center group-hover:border-cream/80 transition-colors anim-float">
+          <div className="w-7 h-7 rounded-full border border-cream/30 flex items-center justify-center group-hover:border-[#ff6b35] group-hover:bg-[#ff6b35]/10 transition-colors anim-float">
             <ArrowDown size={14} className="stroke-[1.5]" />
           </div>
         </button>
@@ -96,7 +96,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToExplore }) =
         <button
           type="button"
           onClick={onScrollToExplore}
-          className="flex flex-col items-center gap-1.5 text-cream/70 hover:text-cream transition-colors cursor-pointer pointer-events-auto"
+          className="flex flex-col items-center gap-1.5 text-cream/70 hover:text-[#ff6b35] transition-colors cursor-pointer pointer-events-auto"
           aria-label="Explore portfolio"
         >
           <span className="text-[10px] font-mono uppercase tracking-widest">Explore</span>

@@ -4,7 +4,7 @@ import { certifications } from '../portfolioData';
 
 export const CertificationsSection: React.FC = () => {
   return (
-    <section id="certifications" className="relative w-full py-20 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-[#121212] text-cream">
+    <section id="certifications" className="relative w-full py-20 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-[#141414] text-cream">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-cream/10">
           <div>
@@ -30,7 +30,7 @@ export const CertificationsSection: React.FC = () => {
             >
               <div>
                 <div className="w-10 h-10 rounded-xl bg-[#222222] border border-cream/10 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform duration-200">
-                  <Award size={20} className="text-[#38bdf8]" />
+                  <Award size={20} className="text-[#ff6b35]" />
                 </div>
 
                 <span className="text-[10px] font-mono uppercase tracking-widest text-cream/50 block mb-1">
@@ -48,7 +48,7 @@ export const CertificationsSection: React.FC = () => {
 
               <div className="pt-4 mt-6 border-t border-cream/10 flex items-center justify-between text-xs font-mono text-cream/50">
                 <span className="flex items-center gap-1.5 text-cream/70">
-                  <CheckCircle size={13} className="text-[#38bdf8]" />
+                  <CheckCircle size={13} className="text-[#ff6b35]" />
                   Verified Credential
                 </span>
               </div>

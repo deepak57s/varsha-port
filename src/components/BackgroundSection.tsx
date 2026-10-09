@@ -39,7 +39,7 @@ export const BackgroundSection: React.FC = () => {
           <div className="lg:col-span-7 bg-[#1a1a1a]/70 border border-cream/10 rounded-2xl p-8 sm:p-10 flex flex-col justify-between backdrop-blur-sm">
             <div>
               <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-cream/60 mb-5">
-                <Sparkles size={14} className="text-[#38bdf8]" />
+                <Sparkles size={14} className="text-[#ff6b35]" />
                 <span>Career Objective & Vision</span>
               </div>
               <blockquote className="text-lg sm:text-xl font-light leading-relaxed text-cream/90 italic">
@@ -125,7 +125,7 @@ export const BackgroundSection: React.FC = () => {
                   <ul className="space-y-2.5 mb-6 text-sm text-cream/70 font-light">
                     {exp.highlights.map((bullet, i) => (
                       <li key={i} className="flex items-start gap-2.5 leading-relaxed">
-                        <CheckCircle2 size={15} className="text-[#38bdf8] mt-1 shrink-0" />
+                        <CheckCircle2 size={15} className="text-[#ff6b35] mt-1 shrink-0" />
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -161,7 +161,7 @@ export const BackgroundSection: React.FC = () => {
                 >
                   <div className="flex items-start justify-between gap-4 mb-2">
                     <div>
-                      <span className="inline-block text-[10px] font-mono uppercase tracking-widest text-[#38bdf8] mb-1">
+                      <span className="inline-block text-[10px] font-mono uppercase tracking-widest text-[#ff6b35] mb-1">
                         {edu.period}
                       </span>
                       <h4 className="text-lg font-medium text-cream">{edu.degree}</h4>
@@ -185,7 +185,7 @@ export const BackgroundSection: React.FC = () => {
                     <ul className="mt-4 pt-4 border-t border-cream/10 space-y-2 text-xs text-cream/70 font-light leading-relaxed">
                       {edu.highlights.map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
-                          <span className="text-[#38bdf8] mt-1 shrink-0">&bull;</span>
+                          <span className="text-[#ff6b35] mt-1 shrink-0">&bull;</span>
                           <span>{item}</span>
                         </li>
                       ))}

@@ -49,7 +49,7 @@ export const ProjectsSection: React.FC = () => {
               onClick={() => setActiveFilter(filter.value)}
               className={`px-4 py-2 rounded-full text-xs font-mono tracking-wider transition-all duration-200 whitespace-nowrap cursor-pointer ${
                 activeFilter === filter.value
-                  ? 'bg-cream text-black font-medium shadow-md'
+                  ? 'bg-[#ff6b35] text-white font-medium shadow-md shadow-[#ff6b35]/20'
                   : 'bg-[#1e1e1e] text-cream/70 hover:text-cream border border-cream/10 hover:border-cream/25'
               }`}
             >
@@ -68,7 +68,7 @@ export const ProjectsSection: React.FC = () => {
               <div>
                 {/* Meta details */}
                 <div className="flex items-center justify-between gap-2 mb-4">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#38bdf8] bg-[#222222] px-2.5 py-1 rounded-md border border-cream/10">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#ff6b35] bg-[#222222] px-2.5 py-1 rounded-md border border-cream/10">
                     {project.categoryLabel}
                   </span>
                   <span className="text-[11px] font-mono text-cream/50 flex items-center gap-1">
@@ -97,7 +97,7 @@ export const ProjectsSection: React.FC = () => {
                 <ul className="space-y-2 mb-6 text-xs text-cream/70 font-light border-t border-cream/10 pt-4">
                   {project.features.slice(0, 2).map((feat, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <CheckCircle2 size={13} className="text-[#38bdf8] mt-0.5 shrink-0" />
+                      <CheckCircle2 size={13} className="text-[#ff6b35] mt-0.5 shrink-0" />
                       <span className="line-clamp-2">{feat}</span>
                     </li>
                   ))}
@@ -127,7 +127,7 @@ export const ProjectsSection: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => setSelectedProject(project)}
-                    className="inline-flex items-center gap-1.5 text-xs font-mono text-cream/80 hover:text-cream cursor-pointer transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono text-cream/80 hover:text-[#ff6b35] cursor-pointer transition-colors"
                   >
                     <span>Architecture Deep-Dive</span>
                     <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -139,7 +139,7 @@ export const ProjectsSection: React.FC = () => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 rounded-lg bg-[#222222] hover:bg-[#2c2c2c] text-cream/70 hover:text-cream border border-cream/10 transition-colors"
+                        className="p-2 rounded-lg bg-[#222222] hover:bg-[#2c2c2c] text-cream/70 hover:text-[#ff6b35] border border-cream/10 transition-colors"
                         aria-label={`GitHub repository for ${project.title}`}
                       >
                         <Github size={15} />
@@ -150,7 +150,7 @@ export const ProjectsSection: React.FC = () => {
                         href={project.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222222] hover:bg-[#2c2c2c] text-[#38bdf8] border border-cream/10 hover:border-[#38bdf8]/40 transition-colors text-xs font-mono"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222222] hover:bg-[#2c2c2c] text-[#ff6b35] border border-cream/10 hover:border-[#ff6b35]/40 transition-colors text-xs font-mono"
                         aria-label={`Verify live application for ${project.title}`}
                         title={`Verify live app: ${project.demoUrl}`}
                       >

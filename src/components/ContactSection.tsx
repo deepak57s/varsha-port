@@ -66,7 +66,7 @@ export const ContactSection: React.FC = () => {
               <div className="bg-[#1a1a1a] border border-cream/10 rounded-xl p-5 flex items-center justify-between gap-3 group hover:border-cream/25 transition-all">
                 <div className="flex items-center gap-3 overflow-hidden">
                   <div className="w-10 h-10 rounded-lg bg-[#242424] flex items-center justify-center shrink-0">
-                    <Mail size={18} className="text-[#38bdf8]" />
+                    <Mail size={18} className="text-[#ff6b35]" />
                   </div>
                   <div className="truncate">
                     <span className="text-[10px] font-mono uppercase text-cream/50 block">Email Address</span>
@@ -98,7 +98,7 @@ export const ContactSection: React.FC = () => {
               <div className="bg-[#1a1a1a] border border-cream/10 rounded-xl p-5 flex items-center justify-between gap-3 group hover:border-cream/25 transition-all">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-[#242424] flex items-center justify-center shrink-0">
-                    <Phone size={18} className="text-[#38bdf8]" />
+                    <Phone size={18} className="text-[#ff6b35]" />
                   </div>
                   <div>
                     <span className="text-[10px] font-mono uppercase text-cream/50 block">Phone / Mobile</span>
@@ -129,7 +129,7 @@ export const ContactSection: React.FC = () => {
               {/* Location Card */}
               <div className="bg-[#1a1a1a] border border-cream/10 rounded-xl p-5 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-[#242424] flex items-center justify-center shrink-0">
-                  <MapPin size={18} className="text-[#38bdf8]" />
+                  <MapPin size={18} className="text-[#ff6b35]" />
                 </div>
                 <div>
                   <span className="text-[10px] font-mono uppercase text-cream/50 block">Location Base</span>
@@ -150,22 +150,22 @@ export const ContactSection: React.FC = () => {
                   href={personalInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1e1e1e] hover:bg-[#262626] border border-cream/10 text-xs font-mono text-cream transition-colors group"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1e1e1e] hover:bg-[#262626] border border-cream/10 text-xs font-mono text-cream hover:text-[#ff6b35] transition-colors group"
                 >
-                  <Linkedin size={15} className="text-[#38bdf8]" />
+                  <Linkedin size={15} className="text-[#ff6b35]" />
                   <span>LinkedIn</span>
-                  <ArrowUpRight size={13} className="text-cream/40 group-hover:text-cream transition-colors" />
+                  <ArrowUpRight size={13} className="text-cream/40 group-hover:text-[#ff6b35] transition-colors" />
                 </a>
 
                 <a
                   href={personalInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1e1e1e] hover:bg-[#262626] border border-cream/10 text-xs font-mono text-cream transition-colors group"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1e1e1e] hover:bg-[#262626] border border-cream/10 text-xs font-mono text-cream hover:text-[#ff6b35] transition-colors group"
                 >
                   <Github size={15} />
                   <span>GitHub</span>
-                  <ArrowUpRight size={13} className="text-cream/40 group-hover:text-cream transition-colors" />
+                  <ArrowUpRight size={13} className="text-cream/40 group-hover:text-[#ff6b35] transition-colors" />
                 </a>
               </div>
             </div>
@@ -204,7 +204,7 @@ export const ContactSection: React.FC = () => {
                       value={formState.name}
                       onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                       placeholder="e.g. Alex Morgan"
-                      className="w-full bg-[#121212] border border-cream/15 focus:border-cream/50 rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/30 focus:outline-none transition-colors"
+                      className="w-full bg-[#121212] border border-cream/15 focus:border-[#ff6b35] rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/30 focus:outline-none transition-colors"
                     />
                   </div>
 
@@ -219,7 +219,7 @@ export const ContactSection: React.FC = () => {
                       value={formState.email}
                       onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                       placeholder="alex@company.com"
-                      className="w-full bg-[#121212] border border-cream/15 focus:border-cream/50 rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/30 focus:outline-none transition-colors"
+                      className="w-full bg-[#121212] border border-cream/15 focus:border-[#ff6b35] rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/30 focus:outline-none transition-colors"
                     />
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export const ContactSection: React.FC = () => {
                     value={formState.subject}
                     onChange={(e) => setFormState({ ...formState, subject: e.target.value })}
                     placeholder="e.g. Data Analyst Opportunity / Project Collaboration"
-                    className="w-full bg-[#121212] border border-cream/15 focus:border-cream/50 rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/30 focus:outline-none transition-colors"
+                    className="w-full bg-[#121212] border border-cream/15 focus:border-[#ff6b35] rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/30 focus:outline-none transition-colors"
                   />
                 </div>
 
@@ -249,7 +249,7 @@ export const ContactSection: React.FC = () => {
                     value={formState.message}
                     onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                     placeholder="Write your message here..."
-                    className="w-full bg-[#121212] border border-cream/15 focus:border-cream/50 rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/30 focus:outline-none transition-colors resize-none"
+                    className="w-full bg-[#121212] border border-cream/15 focus:border-[#ff6b35] rounded-xl px-4 py-2.5 text-sm text-cream placeholder-cream/30 focus:outline-none transition-colors resize-none"
                   />
                 </div>
 
@@ -257,7 +257,7 @@ export const ContactSection: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cream hover:bg-white text-black font-medium text-xs font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer disabled:opacity-50"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ff6b35] hover:bg-[#e85a26] text-white font-medium text-xs font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer disabled:opacity-50 shadow-md shadow-[#ff6b35]/20"
                   >
                     {isSubmitting ? (
                       <span>Sending...</span>
