@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Compass, GraduationCap, Briefcase, Mail, Layers, Award } from 'lucide-react';
+import { Compass, GraduationCap, Briefcase, Mail, Layers, Award } from 'lucide-react';
 import GooeyNav, { GooeyNavItem } from './GooeyNav';
 import { HeroSection } from './components/HeroSection';
 import { BackgroundSection } from './components/BackgroundSection';
@@ -200,20 +200,6 @@ export default function App() {
         }`}
         aria-label="Mobile Navigation"
       >
-        {/* Close Button */}
-        <button
-          type="button"
-          onClick={() => setIsDrawerOpen(false)}
-          aria-label="Close Navigation"
-          className={`absolute right-6 top-6 text-cream transition-all duration-300 cursor-pointer ${
-            isDrawerOpen
-              ? 'opacity-100 rotate-0 delay-300'
-              : 'opacity-0 rotate-90 pointer-events-none'
-          }`}
-        >
-          <X size={26} strokeWidth={1.5} />
-        </button>
-
         {/* Drawer Content */}
         <div className="mt-14 flex flex-col gap-8">
           <div>
