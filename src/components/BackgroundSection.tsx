@@ -4,7 +4,7 @@ import { personalInfo, experiences, educations } from '../portfolioData';
 
 export const BackgroundSection: React.FC = () => {
   return (
-    <section id="background" className="relative w-full py-24 sm:py-32 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-[#141414] text-cream">
+    <section id="background" className="relative w-full py-24 sm:py-32 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-transparent text-cream">
       {/* Decorative subtle hairline grid background */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"

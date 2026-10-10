@@ -4,7 +4,7 @@ import { certifications } from '../portfolioData';
 
 export const CertificationsSection: React.FC = () => {
   return (
-    <section id="certifications" className="relative w-full py-20 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-[#141414] text-cream">
+    <section id="certifications" className="relative w-full py-20 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-transparent text-cream">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-cream/10">
           <div>

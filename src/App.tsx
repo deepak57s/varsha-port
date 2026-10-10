@@ -93,14 +93,20 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen w-full bg-[#141414] text-cream font-hn selection:bg-cream selection:text-black">
+    <div className="relative min-h-screen w-full text-cream font-hn selection:bg-cream selection:text-black">
+      {/* Global Project Gradient Background */}
+      <div
+        className="fixed inset-0 pointer-events-none -z-10 project-gradient-bg"
+        aria-hidden="true"
+      />
+
       {/* =========================================================================
           FIXED HEADER: Dynamic Glass Navbar with GooeyNav
       ========================================================================= */}
       <header
         className={`fixed inset-x-0 top-0 z-40 flex items-center justify-between px-6 sm:px-10 transition-all duration-300 pointer-events-auto ${
           isScrolled
-            ? 'py-3.5 bg-[#141414]/85 backdrop-blur-md border-b border-cream/10 shadow-lg'
+            ? 'py-3.5 bg-[#1F1C18]/85 backdrop-blur-md border-b border-cream/10 shadow-lg'
             : 'pt-5 sm:pt-6 pb-2 bg-transparent'
         }`}
       >
@@ -195,7 +201,7 @@ export default function App() {
       />
 
       <aside
-        className={`sm:hidden fixed top-0 right-0 bottom-0 z-40 w-[85%] max-w-sm bg-[#141414] px-8 py-10 flex flex-col justify-between transform transition-transform duration-600 ease-[cubic-bezier(0.76,0,0.24,1)] overflow-y-auto ${
+        className={`sm:hidden fixed top-0 right-0 bottom-0 z-40 w-[85%] max-w-sm bg-[#1F1C18]/95 backdrop-blur-xl border-l border-cream/10 px-8 py-10 flex flex-col justify-between transform transition-transform duration-600 ease-[cubic-bezier(0.76,0,0.24,1)] overflow-y-auto ${
           isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         aria-label="Mobile Navigation"

@@ -35,7 +35,7 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="relative w-full py-24 sm:py-32 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-[#141414] text-cream">
+    <section id="contact" className="relative w-full py-24 sm:py-32 px-6 sm:px-10 lg:px-16 border-t border-cream/10 bg-transparent text-cream">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-cream/10">

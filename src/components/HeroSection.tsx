@@ -10,18 +10,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToExplore }) =
   return (
     <section
       id="home"
-      className="relative h-[100dvh] min-h-[640px] w-full overflow-hidden bg-[#141414] select-none text-cream font-hn"
+      className="relative h-[100dvh] min-h-[640px] w-full overflow-hidden bg-transparent select-none text-cream font-hn"
     >
-      {/* LAYER 0: Full-bleed Background Image */}
+      {/* LAYER 0: Ambient Texture Blend with Project Gradient */}
       <img
         src={personalInfo.bgImage}
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full object-cover anim-fade-in pointer-events-none opacity-80"
+        className="absolute inset-0 h-full w-full object-cover anim-fade-in pointer-events-none opacity-15 mix-blend-overlay"
       />
 
       {/* Subtle overlay gradient to ensure seamless visual transition */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#141414]/20 to-[#141414] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30 pointer-events-none" />
 
       {/* LAYER 1: Marquee Name (top-[16vh] sm:top-[14vh]) */}
       <div

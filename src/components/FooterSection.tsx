@@ -8,7 +8,7 @@ interface FooterSectionProps {
 
 export const FooterSection: React.FC<FooterSectionProps> = ({ onBackToTop }) => {
   return (
-    <footer className="w-full bg-[#141414] border-t border-cream/10 py-16 px-6 sm:px-10 lg:px-16 text-cream">
+    <footer className="w-full bg-black/40 backdrop-blur-md border-t border-cream/10 py-16 px-6 sm:px-10 lg:px-16 text-cream">
       <div className="max-w-6xl mx-auto flex flex-col justify-between gap-12">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pb-10 border-b border-cream/10">
           <div>

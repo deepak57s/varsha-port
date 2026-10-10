@@ -23,12 +23,21 @@
   body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
-    background-color: #141414;
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
     color: #f7f6f2;
     font-family: "Helvetica Neue ME", Helvetica, Arial, sans-serif;
+  }
+
+  .project-gradient-bg {
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   ::selection {
@@ -130,7 +139,7 @@
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #141414;
+  background: #1F1C18;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(247, 246, 242, 0.18);

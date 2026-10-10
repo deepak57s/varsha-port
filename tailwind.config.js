@@ -9,12 +9,17 @@ export default {
       colors: {
         cream: '#f7f6f2',
         charcoal: '#141414',
+        gradientDark: '#1F1C18',
+        gradientRed: '#8E0E00',
         accent: {
           DEFAULT: '#ff6b35',
           hover: '#e85a26',
           light: '#ff8555',
           subtle: 'rgba(255, 107, 53, 0.12)',
         },
+      },
+      backgroundImage: {
+        'project-gradient': 'linear-gradient(to top, #1F1C18, #8E0E00)',
       },
       fontFamily: {
         hn: ['"Helvetica Neue ME"', 'Helvetica', 'Arial', 'sans-serif'],
